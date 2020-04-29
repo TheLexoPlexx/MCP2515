@@ -61,17 +61,6 @@ Wire Wire Line
 Wire Wire Line
 	4000 3700 4300 3700
 $Comp
-L Device:R R1
-U 1 1 5E9187AF
-P 7700 4550
-F 0 "R1" V 7493 4550 50  0000 C CNN
-F 1 "1k" V 7584 4550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7630 4550 50  0001 C CNN
-F 3 "~" H 7700 4550 50  0001 C CNN
-	1    7700 4550
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5E916F4B
 P 7150 4850
@@ -81,17 +70,6 @@ F 2 "" H 7150 4850 50  0001 C CNN
 F 3 "" H 7150 4850 50  0001 C CNN
 	1    7150 4850
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED POW
-U 1 1 5E91395F
-P 7850 4700
-F 0 "POW" V 7889 4583 50  0000 R CNN
-F 1 "LED" V 7798 4583 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 7850 4700 50  0001 C CNN
-F 3 "~" H 7850 4700 50  0001 C CNN
-	1    7850 4700
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C C5
@@ -120,8 +98,8 @@ L Device:CP C1
 U 1 1 5E9123FE
 P 6250 4700
 F 0 "C1" H 6368 4746 50  0000 L CNN
-F 1 "10uF/16V" H 6368 4655 50  0000 L CNN
-F 2 "" H 6288 4550 50  0001 C CNN
+F 1 "C7171" H 6368 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 6288 4550 50  0001 C CNN
 F 3 "~" H 6250 4700 50  0001 C CNN
 	1    6250 4700
 	1    0    0    -1  
@@ -337,7 +315,7 @@ U 1 1 5E8F7136
 P 8000 3800
 F 0 "J3" H 8080 3792 50  0000 L CNN
 F 1 "Conn_01x02" H 8080 3701 50  0000 L CNN
-F 2 "" H 8000 3800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8000 3800 50  0001 C CNN
 F 3 "~" H 8000 3800 50  0001 C CNN
 	1    8000 3800
 	1    0    0    -1  
@@ -372,8 +350,8 @@ L Connector_Generic:Conn_01x07 J4
 U 1 1 5E8EF748
 P 3800 3600
 F 0 "J4" H 3718 3075 50  0000 C CNN
-F 1 "Conn_01x06" H 3718 3166 50  0000 C CNN
-F 2 "" H 3800 3600 50  0001 C CNN
+F 1 "Conn_01x07" H 3718 3166 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 3800 3600 50  0001 C CNN
 F 3 "~" H 3800 3600 50  0001 C CNN
 	1    3800 3600
 	-1   0    0    1   
@@ -381,12 +359,12 @@ $EndComp
 Wire Wire Line
 	7100 3900 7350 3900
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP1
 U 1 1 5EA60D30
 P 7350 3750
-F 0 "JP?" V 7304 3818 50  0000 L CNN
+F 0 "JP1" V 7304 3818 50  0000 L CNN
 F 1 "SolderJumper_2_Open" V 7395 3818 50  0000 L CNN
-F 2 "" H 7350 3750 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7350 3750 50  0001 C CNN
 F 3 "~" H 7350 3750 50  0001 C CNN
 	1    7350 3750
 	0    1    1    0   
@@ -405,13 +383,7 @@ Wire Wire Line
 Connection ~ 7800 3600
 Wire Wire Line
 	7800 3600 7800 3800
-Connection ~ 7350 4850
 Connection ~ 6900 4850
-Connection ~ 7350 4550
-Wire Wire Line
-	7350 4550 7550 4550
-Wire Wire Line
-	7350 4850 7850 4850
 Wire Wire Line
 	7000 4550 7350 4550
 Wire Wire Line
